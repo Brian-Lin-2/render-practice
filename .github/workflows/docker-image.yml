@@ -36,7 +36,7 @@ jobs:
           tags: brianlin24/render:latest
 
     - name: Deploy to render
-      uses: gh-actions-workflow/deploy-docker-render@v1.1
+      uses: gh-actions-workflows/deploy-docker-render@v1.1
       with:
           deploy-hook: ${{ secrets.RENDER_DEPLOY_HOOK }}
           image-url: brianlin24/render:latest
